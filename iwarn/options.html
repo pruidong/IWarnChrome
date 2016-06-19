@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>设置</title> 
+  <link rel="stylesheet" type="text/css" href="css/amazeui.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/options.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/icheck/all.css" /> 
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/json2.js"></script> 
+  <script src="js/iCheck.js"></script> 
+  <script src="js/popup.js"></script> 
+  <script src="js/options.js"></script> 
+  <script src="layer/layer.js"></script> 
+ </head> 
+ <body> 
+  <!-- 头部 -->
+  <header class="am-center"> 
+   <h1>Iwarn</h1>
+   <small>_随时给自己一个提醒</small> 
+  </header> 
+  <!-- 头部 end -->
+
+  <!-- 主要内容 -->
+  <article id="main" class="am-center"> 
+   <div> 
+    <blockquote>
+      当进入下面的网站时,将自动显示相关数据. 如需永久停用某个网站的提示,请直接删除相关数据. 
+    </blockquote> 
+   </div>
+
+   <!-- 展示:已经保存的网址信息(因布局原因,不提供字体大小设置的预览) --> 
+   <table class="am-table am-table-bordered am-table-radius am-table-striped"> 
+    <thead> 
+     <tr> 
+      <th>网站</th> 
+      <th>提示内容</th> 
+      <th>字体大小</th> 
+      <th>字体颜色</th> 
+      <th>背景颜色</th> 
+      <th>关闭窗口</th> 
+      <th>操作</th> 
+     </tr> 
+    </thead> 
+    <tbody id="contenttablebody"> 
+    </tbody> 
+   </table> 
+    <!-- 展示:已经保存的网址信息(因布局原因,不提供字体大小设置的预览) end --> 
+  </article>
+  <!-- 主要内容 end --> 
+
+  <!-- 修改数据  -->
+  <div id="updateWwwSiteInfoDiv"> 
+   <div class="info-title">
+    修改数据 - 只在这里
+    <span class="rightclose"><img src="image/close.png" width="20px" height="20px;" /></span>
+   </div> 
+   <form class="am-form am-form-inline"> 
+    <fieldset> 
+     <div class="am-form-group">
+      <input type="hidden" id="updateWwwSiteOptions"  value="update"/> 
+      <input type="text" class="" value="" id="doc-ipt-www-1" readonly="readonly" /> 
+      <span class="message"></span> 
+     </div> 
+     <div class="am-form-group"> 
+      <input type="text" placeholder="提示文本" maxlength="100" id="doc-content-1" /> 
+      <span class="message"></span> 
+     </div> 
+     <div class="am-form-group"> 
+      <span class="fontsizedemo">字体大小(单位:px)</span> 
+      <input type="number" class="" placeholder="输入数字" value="12" min="12" max="72" id="doc-fontsize-1" /> 
+      <span class="message"></span> 
+     </div> 
+     <br /> 
+     <div class="am-form-group"> 
+      <span class="fontcolordemo">字体颜色</span> 
+      <input type="color" class="" min="12" max="72" id="doc-fontcolor-1" /> 
+     </div> 
+     <div class="am-form-group"> 
+      <span class="backcolordemo">(默认白色)背景颜色</span> 
+      <input type="color" class="" value="#ffffff" min="12" max="72" id="doc-backcolor-1" /> 
+     </div> 
+     <div class="am-form-group"> 
+      <div class="iscloseinfodiv"> 
+       <label for="iscloseyes">窗口可以关闭</label> 
+       <input type="radio" name="isclosealert" id="iscloseyes" value="0" class="iscloseinfo" checked="checked" /> 
+       <label for="iscloseno">窗口不能关闭</label> 
+       <input type="radio" id="iscloseno" name="isclosealert" value="1" class="iscloseinfo" /> 
+       <small><abbr title="若窗口设置成不能关闭,可能影响正常网页浏览[可通过选项页进行删除/修改]">重要提示</abbr></small> 
+      </div> 
+      <span class="message"></span> 
+     </div> 
+     <br /> 
+     <div class="am-form-group am-hide " id="seeiwarninfo"> 
+      <label for="doc-backcolor-1">预览效果</label> 
+      <span class="seeinfo">这里是示例文字</span> 
+     </div> 
+     <p><button type="button" id="submitUpdateIWarn" class="am-btn am-btn-default">提交</button>&nbsp;&nbsp;<button type="button" id="seeIWarn" class="am-btn am-btn-default">预览</button></p> 
+    </fieldset> 
+   </form> 
+  </div>
+  <!-- 修改数据 end -->  
+ </body>
+<!-- By Prd . / 2016.06.18 / WWW.07Q.NET / CODE IS POETRY. -->
+</html>

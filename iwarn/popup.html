@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<title>定义展示</title>
+	<link rel="stylesheet" type="text/css" href="css/amazeui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/icheck/all.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/json2.js"></script>
+	<script src="js/iCheck.js"></script>
+	<script src="js/popup.js"></script>
+</head>
+<body>
+    <!-- 弹出页面 .  -->
+	<article>
+		<form class="am-form">
+		  <fieldset>
+		    <legend>为网站设置一个提示 Chrome版</legend>
+		    <div class="am-form-group">
+		      <label for="doc-ipt-www-1">网址</label>
+		      <input type="text" class="" value="" id="doc-ipt-www-1" placeholder="(不带http://或者ftp://或者https://,不支持文件网址)">
+		      <span class="message"></span>
+		    </div>
+		    <div class="am-form-group">
+		      <label for="doc-content-1">提示文本</label>
+		      <textarea class="" rows="2" maxlength="100" placeholder="想展示什么话给自己" id="doc-content-1"></textarea>
+		      <span class="message"></span>
+		    </div>
+		    <div class="am-form-group">
+		      <label for="doc-fontsize-1">字体大小(单位:px)</label>
+		      <span class="fontsizedemo" style="font-size:12px;">请点击[预览]查看效果</span>
+		      <input type="number" class="" value="12" min="12" max="72" id="doc-fontsize-1" placeholder="输入数字">
+		      <span class="message"></span>
+		    </div>
+		    <div class="am-form-group">
+		      <label for="doc-fontcolor-1">字体颜色</label>
+		      <span class="fontcolordemo" style="font-size:12px;">这里是示例文字</span>
+		      <input type="color" class="" min="12" max="72" id="doc-fontcolor-1" >
+		    </div>
+		    <div class="am-form-group">
+		      <label for="doc-backcolor-1">背景颜色</label>
+		      <span class="backcolordemo" style="font-size:12px;padding:5px;">(默认白色)这里是示例文字</span>
+		      <input type="color" class="" value="#ffffff" min="12" max="72" id="doc-backcolor-1" >
+		    </div>
+		    <div class="am-form-group">
+		    <label for="doc-fontsize-1">窗口是否允许关闭</label>
+		      <br />
+		      <div style="border:#ccc dashed 1px;padding:5px;">
+			      <label for="iscloseyes">可以关闭</label>
+					<input type="radio" name="isclosealert" id="iscloseyes" value="0" class="iscloseinfo" checked="checked" />
+					<label for="iscloseno">不能关闭</label>
+			      <input type="radio" id="iscloseno" name="isclosealert" value="1" class="iscloseinfo" />
+			      <br />
+			      <abbr title="若窗口设置成不能关闭,可能影响正常网页浏览[可通过选项页进行删除/修改]">重要提示</abbr>
+		      </div>
+		      <span class="message"></span>
+		    </div>
+		    <div class="am-form-group am-hide " id="seeiwarninfo">
+		      <label for="doc-backcolor-1">预览效果</label>
+		      <span class="seeinfo" style="padding:5px;">这里是示例文字</span>
+		    </div>
+		    <p><button type="button" id="submitIWarn" class="am-btn am-btn-default subbutton">提交</button>&nbsp;&nbsp;<button type="button" id="seeIWarn" class="am-btn am-btn-default subbutton">预览</button></p>
+		  </fieldset>
+		</form>
+	</article>
+	<!-- 弹出页面 . end   -->
+</body>
+<!-- By Prd . / 2016.06.18 / WWW.07Q.NET / CODE IS POETRY. -->
+</html>
